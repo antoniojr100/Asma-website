@@ -1,0 +1,637 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
+
+/* General Styles Start */
+
+html{
+    scroll-behavior: smooth;
+    font-size: 125%;
+}
+
+body{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    width: 85%;
+    margin: 0 auto;
+}
+
+#nav-bar{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+header,
+section,
+footer{
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* General Styles End */
+/* Typography Starts */
+h1, h2, h3, h4, a, p{
+    text-align: center;
+}
+
+h1{
+    font-size: 3.2rem;
+}
+
+h2{
+    font-size: 2.4rem;
+    margin: 0 auto;
+    padding: 2rem 0 1rem 0;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+
+a, p, h5{
+    font-size: 1rem;
+}
+
+i{
+    font-size: 2rem;
+    color: black;
+    transition-duration: .3s;
+}
+
+i:hover,
+i:focus,
+i:active{
+    transition-duration: .5s;
+    transform: scale(1.5);
+}
+/* Typography Ends */
+/* Header Starts */
+header{
+    /* height: 65vh; */
+    background-color: #cbd5cc;
+    
+}
+
+#nav-bar{
+    margin: 0 auto;
+    /* padding: 2rem 0; */
+}
+
+#nav-bar li{
+    transition-duration: .2s;
+}
+
+#nav-bar li:hover{
+    transform: scale(1.2);
+    transition-duration: .2s;
+}
+
+#headshot{
+    width: 35%;
+    margin: 0 auto;
+    border: 10px solid #577575;
+    border-radius: 9%;
+    padding: 0;
+    background-color: #577575;
+}
+
+img{
+    width: 100%;
+    margin: 0;
+    border-radius: 8%;
+    padding: 0;
+}
+
+
+/* #hamburger-menu */
+
+#hamburger-menu{
+    display: none;
+    /* margin: 0 auto; */
+}
+
+.show#hamburger-menu{
+    display: block;
+}
+
+#hamburger-open,
+#hamburger-close{
+    display: none;
+    margin: 0 auto;
+    background-color:#cbd5cc;
+    border: none;
+}
+
+
+#hamburger-close{
+    display: flex;
+}
+
+#hamburger-menu ul{
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+#hamburger-menu li{
+    padding: 0.75rem 0;
+}
+
+#hamburger-menu a{
+    color: black;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+#hamburger-open,
+#hamburger-close{
+    background-color: #cbd5cc;
+    border: none;
+    color: black;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#hamburger-open i,
+#hamburger-close i{
+    padding: 2.25rem 0;
+}
+
+/* hamburger menu ends */
+
+
+/* Header Ends */
+/* About Starts */
+#about{
+    background-color: #a6a892;
+}
+
+#about h4{
+    text-align: center;
+}
+
+#fees,
+#payment{
+    margin: 0 auto;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+/* About Ends */
+/* Qualifications Starts */
+#qualifications{
+    background-color: #87a69e;
+}
+
+#specialties,
+#types-of-therapy{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    /* border: 1px solid white; */
+    padding: 0 auto;
+}
+
+#specialties li,
+#types-of-therapy li{
+    width: 33.3%;
+    text-align: center;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    padding: 1rem 0;
+    font-weight: bold;
+}
+
+#education{
+    margin: 0 auto;
+    width: 65%;
+    /* text-align: center; */
+}
+
+#additional-credentials{
+    margin: 0 auto;
+    width: 60%;
+}
+
+
+/* Qualifications Ends */
+/* Treatment Starts */
+#treatment{
+    background-color: #c9bc9a;
+}
+
+#client-focus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e7dcc6;
+    padding: 3rem 1.5rem;
+    border-radius: 20%;
+    border: 5px solid #577575;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+#client-focus .left{
+    width: 40%;
+    /* text-align: center; */
+}
+
+#client-focus .right{
+    width: 60%;
+}
+
+#age,
+#participants,
+#communities,
+#ethnicity,
+#languages{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin-top: 0;
+    margin: 0.5rem 0;
+}
+
+
+#treatment ul,
+#specialties{
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Treatment Ends */
+/* Contact Starts */
+#contact{
+    background-color: #577575;
+}
+
+#nearby-cities{
+    width: 20%;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#email-me{
+    font-weight: bold;
+}
+/* Contact Ends */
+/* Footer Starts */
+footer{
+    background-color: #e7dcc6;
+}
+
+#links{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+footer p{
+    margin-top: 2.5rem;
+}
+
+
+/* Footer Ends */
+
+/* 
+dark-green: #577575;
+green: #87a69e;
+light-green: #cbd5cc;
+light-beige: #e7dcc6;
+beige: #c9bc9a;
+camo: #a6a892;
+*/
+
+/* responsive starts */
+@media(max-width: 1700px){
+    
+    #education{
+        width: 70%;
+    }
+
+    #additional-credentials{
+        width: 65%;
+    }
+}
+
+@media(max-width: 1580px){
+    
+    #education{
+        width: 75%;
+    }
+
+    #additional-credentials{
+        width: 70%;
+    }
+}
+
+@media(max-width: 1440px){
+    
+    #education{
+        width: 80%;
+    }
+
+    #additional-credentials{
+        width: 75%;
+    }
+}
+
+
+@media(max-width: 1350px){
+    
+    #education{
+        width: 85%;
+    }
+
+    #additional-credentials{
+        width: 80%;
+    }
+}
+
+@media(max-width: 1275px){
+    #headshot{
+        width: 45%;
+    }
+
+    #education{
+        width: 90%;
+    }
+
+    #additional-credentials{
+        width: 85%;
+    }
+
+    #client-focus{
+        max-width: 80%;
+    }
+}
+
+@media(max-width: 1200px){
+    
+    #education{
+        width: 95%;
+    }
+
+    #additional-credentials{
+        width: 90%;
+    }
+}
+
+@media(max-width: 1050px){
+    #headshot{
+        width: 55%;
+    }
+}
+
+@media(max-width: 1030px){
+    #fees{
+        width: 35%;
+    }
+
+    #payment{
+        width: 35%;
+    }
+}
+
+@media(max-width: 1000px){
+    #client-focus{
+        max-width: 90%;
+    }
+}
+
+@media(max-width: 885px){
+    #headshot{
+        width: 60%;
+    }
+
+    #fees{
+        width: 45%;
+    }
+
+    #payment{
+        width: 45%;
+    }
+}
+
+@media(max-width: 750px){
+    #headshot{
+        width: 65%;
+    }
+}
+
+@media(max-width: 690px){
+    #headshot{
+        width: 70%;
+    }
+
+    #fees{
+        width: 50%;
+    }
+
+    #payment{
+        width: 50%;
+    }
+
+    #nearby-cities{
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    #nearby-cities li{
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media(max-width: 620px){
+    #headshot{
+        width: 75%;
+    }
+
+    #fees{
+        width: 55%;
+    }
+
+    #payment{
+        width: 55%;
+    }
+
+    #types-of-therapy li,
+    #specialties li{
+        width: 50%;
+    }
+}
+
+@media(max-width: 565px){
+    #headshot{
+        width: 80%;
+    }
+
+
+/* slideout nav starts*/
+
+#main-nav{
+        display: none;
+    }
+
+    #hamburger-open{
+        display: block;
+    }
+
+    #hamburger-menu .fullScreen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #cbd5cc;
+        z-index: 100;
+        height: 100vh;
+    }
+/* slideout nav ends */
+
+    #fees{
+        width: 60%;
+    }
+
+    #payment{
+        width: 60%;
+    }
+
+    #age,
+    #participants,
+    #communities,
+    #ethnicity,
+    #languages{
+        flex-direction: column;
+    }
+
+    #client-focus .left,
+    #client-focus .right{
+        width: 100%;
+    } 
+}
+
+@media(max-width: 550px){
+    
+    #links{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #links li{
+        padding: 1rem 0;
+    }
+}
+
+@media(max-width: 520px){
+    #fees{
+        width: 65%;
+    }
+
+    #payment{
+        width: 65%;
+    }
+}
+
+@media(max-width: 510px){
+    #headshot{
+        width: 85%;
+    }
+}
+
+@media(max-width: 480px){
+    #fees{
+        width: 70%;
+    }
+
+    #payment{
+        width: 70%;
+    }
+
+    #types-of-therapy li,
+    #specialties li{
+        width: 100%;
+    }
+}
+
+@media(max-width: 440px){
+    #fees{
+        width: 75%;
+    }
+
+    #payment{
+        width: 75%;
+    }
+}
+
+@media(max-width: 410px){
+    #headshot{
+        width: 90%;
+    }
+
+    #fees{
+        width: 80%;
+    }
+
+    #payment{
+        width: 80%;
+    }
+}
+
+@media(max-width: 385px){
+    #fees{
+        width: 90%;
+    }
+
+    #payment{
+        width: 90%;
+    }
+}
+
+@media(max-width: 360px){
+    #headshot{
+        width: 95%;
+    }
+}
+
+@media(max-width: 345px){
+    #fees{
+        width: 100%;
+    }
+
+    #payment{
+        width: 100%;
+    }
+}
+/* responsive ends */
