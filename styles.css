@@ -261,13 +261,13 @@ img{
 
 #education{
     margin: 0 auto;
-    width: 65%;
+    width: 40%;
     /* text-align: center; */
 }
 
 #additional-credentials{
     margin: 0 auto;
-    width: 60%;
+    width: 50%;
 }
 
 
@@ -373,7 +373,29 @@ camo: #a6a892;
 @media(max-width: 1700px){
     
     #education{
-        width: 70%;
+        width: 45%;
+    }
+
+    #additional-credentials{
+        width: 55%;
+    }
+}
+
+@media(max-width: 1580px){
+    
+    #education{
+        width: 50%;
+    }
+
+    #additional-credentials{
+        width: 60%;
+    }
+}
+
+@media(max-width: 1440px){
+    
+    #education{
+        width: 55%;
     }
 
     #additional-credentials{
@@ -381,51 +403,29 @@ camo: #a6a892;
     }
 }
 
-@media(max-width: 1580px){
+
+/* @media(max-width: 1350px){
     
     #education{
-        width: 75%;
+        width: 60%;
     }
 
     #additional-credentials{
         width: 70%;
     }
-}
-
-@media(max-width: 1440px){
-    
-    #education{
-        width: 80%;
-    }
-
-    #additional-credentials{
-        width: 75%;
-    }
-}
-
-
-@media(max-width: 1350px){
-    
-    #education{
-        width: 85%;
-    }
-
-    #additional-credentials{
-        width: 80%;
-    }
-}
+} */
 
 @media(max-width: 1275px){
     #headshot{
-        width: 45%;
+        width: 60%;
     }
 
     #education{
-        width: 90%;
+        width: 60%;
     }
 
     #additional-credentials{
-        width: 85%;
+        width: 70%;
     }
 
     #client-focus{
@@ -436,11 +436,11 @@ camo: #a6a892;
 @media(max-width: 1200px){
     
     #education{
-        width: 95%;
+        width: 65%;
     }
 
     #additional-credentials{
-        width: 90%;
+        width: 75%;
     }
 }
 
@@ -452,6 +452,14 @@ camo: #a6a892;
     #nav-bar li{
         width: 33%;
         margin-bottom: 1.5rem;
+    }
+
+    #education{
+        width: 70%;
+    }
+
+    #additional-credentials{
+        width: 80%;
     }
 }
 
@@ -481,6 +489,27 @@ camo: #a6a892;
     }
 }
 
+
+@media(max-width: 980px){
+    #education{
+        width: 75%;
+    }
+
+    #additional-credentials{
+        width: 85%;
+    }
+}
+
+@media(max-width: 915px){
+    #education{
+        width: 80%;
+    }
+
+    #additional-credentials{
+        width: 90%;
+    }
+}
+
 @media(max-width: 885px){
     #headshot{
         width: 60%;
@@ -495,9 +524,44 @@ camo: #a6a892;
     }
 }
 
+
+@media(max-width: 855px){
+    #education{
+        width: 85%;
+    }
+
+    #additional-credentials{
+        width: 95%;
+    }
+}
+
+@media(max-width: 816px){
+    #additional-credentials{
+        width: 100%;
+    }
+}
+
+@media(max-width: 806px){
+    #education{
+        width: 90%;
+    }
+}
+
+@media(max-width: 761px){
+    #education{
+        width: 95%;
+    }
+}
+
 @media(max-width: 750px){
     #headshot{
         width: 65%;
+    }
+}
+
+@media(max-width: 721px){
+    #education{
+        width: 100%;
     }
 }
 
