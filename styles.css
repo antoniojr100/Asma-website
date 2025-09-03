@@ -85,7 +85,27 @@ i:active{
     transition-duration: .5s;
     transform: scale(1.5);
 }
+
+.change-language{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 2.5rem 0;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+#main-arabic p{
+    text-align: right;
+}
 /* Typography Ends */
+/* Arabic Section starts */
+#main-arabic{
+    background-color: #e7dcc6;
+}
+/* Arabic Section Ends */
 /* Header Starts */
 header{
     /* height: 65vh; */
