@@ -31,7 +31,9 @@ body{
     list-style-type: none;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    text-align: center;
 }
 
 a{
@@ -54,6 +56,7 @@ h1, h2, h3, h4, a, p{
 
 h1{
     font-size: 3.2rem;
+    font-family: "Edu NSW ACT Cursive", cursive;
 }
 
 h2{
@@ -120,6 +123,10 @@ img{
     padding: 0;
 }
 
+#main-quote{
+    font-weight: bold;
+    font-style: italic;
+}
 
 /* #hamburger-menu */
 
@@ -184,6 +191,35 @@ img{
 #about{
     background-color: #a6a892;
 }
+
+#about-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+#about-images .image-container{
+    /* width: 40%; */
+    margin: 0 auto 1.5rem 0;
+    border: 10px solid #577575;
+    border-radius: 9%;
+    padding: 0;
+    background-color: #577575;
+}
+
+#about-images #left-image{
+    width: 58%;
+    margin: 0 auto;
+    
+}
+
+#about-images #right-image{
+    width: 25%;
+    margin: 0 auto;
+}
+
 
 #about h4{
     text-align: center;
@@ -251,6 +287,11 @@ img{
     border: 5px solid #577575;
     max-width: 60%;
     margin: 0 auto;
+}
+
+#client-focus ul{
+    list-style-type: none;
+    padding: 0;
 }
 
 #client-focus .left{
@@ -407,6 +448,11 @@ camo: #a6a892;
     #headshot{
         width: 55%;
     }
+
+    #nav-bar li{
+        width: 33%;
+        margin-bottom: 1.5rem;
+    }
 }
 
 @media(max-width: 1030px){
@@ -422,6 +468,16 @@ camo: #a6a892;
 @media(max-width: 1000px){
     #client-focus{
         max-width: 90%;
+    }
+
+    #about-images{
+        flex-direction: column;
+    }
+
+    #about-images #left-image,
+    #about-images #right-image{
+        margin: 0.5rem 0;
+        width: 100%;
     }
 }
 
