@@ -22,7 +22,6 @@ $('Document').ready(function() {
 })
 
 
-
-/*
-wellnesscentreasma
-*/
+//  Interim Federal Health Program (IFH)
+//  Medavie Blue Cross
+//  Other private insurance is accepted

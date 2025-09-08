@@ -100,6 +100,17 @@ i:active{
 #main-arabic p{
     text-align: right;
 }
+
+.arabic-text{
+    /* border: 1px solid black; */
+    width: 600px;
+    margin: 0 auto;
+}
+
+.arabic-text p{
+    text-align: right;
+}
+
 /* Typography Ends */
 /* Arabic Section starts */
 #main-arabic{
@@ -246,7 +257,8 @@ img{
 }
 
 #fees,
-#payment{
+#payment,
+#insurance{
     margin: 0 auto;
     width: 30%;
     display: flex;
@@ -451,6 +463,10 @@ camo: #a6a892;
     #client-focus{
         max-width: 80%;
     }
+
+    #types-of-therapy li{
+        width: 50%;
+    }
 }
 
 @media(max-width: 1200px){
@@ -585,6 +601,14 @@ camo: #a6a892;
     }
 }
 
+@media(max-width: 706px){
+    .arabic-text{
+        /* width: 550px; */
+        width: 100%;
+    }
+}
+
+
 @media(max-width: 690px){
     #headshot{
         width: 70%;
@@ -626,7 +650,6 @@ camo: #a6a892;
         width: 55%;
     }
 
-    #types-of-therapy li,
     #specialties li{
         width: 50%;
     }
