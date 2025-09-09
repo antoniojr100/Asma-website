@@ -20,8 +20,3 @@ $('Document').ready(function() {
         $('#hamburger-menu').removeClass('show');
     })
 })
-
-
-//  Interim Federal Health Program (IFH)
-//  Medavie Blue Cross
-//  Other private insurance is accepted
